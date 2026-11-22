@@ -51,7 +51,7 @@ def analyseUsage(timestamps, results):
         day_obj = daily_stuff[i]
         usage_str = "{0:.2f}".format(day_obj.usage)
         cost_str = "{0:.2f}".format(day_obj.cost)
-        results.append(" - " + day_obj.weekday + " usage " + usage_str + " kwh, cost " + cost_str + " €")
+        results.append(" - " + day_obj.weekday + " usage " + usage_str + " kWh, cost " + cost_str + " €")
     results.append("### Electricity consumption summary ###")
     daily_stuff.clear()
     return None
